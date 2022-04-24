@@ -5,7 +5,6 @@ using UnityEngine;
 public class Hub : MonoBehaviour{
 
     public static Pawn selectedPiece;
-
     public void MoveUp(){
         if(selectedPiece == null) return;
         bool result = selectedPiece.Translation("NORTH");

@@ -7,10 +7,9 @@ public abstract class Pawn : MonoBehaviour
 {
     public float speed = 5f;
     public Tilemap gridBoard;
-
     public Pawn[,] gridPawn = new Pawn[10,8];
-
-    public abstract bool Rotate(bool isClockwise);
+    public string team;
+    public abstract bool Rotate(bool isClockwise = true);
 
      /// <summary>
     /// OnMouseDown is called when the user has pressed the mouse button while
